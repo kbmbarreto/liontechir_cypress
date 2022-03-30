@@ -1,5 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Mar 30 20:18:52 BRT 2022","Wed Mar 30 20:18:52 BRT 2022","90","","Testes da tela de login","","","","Verificação dos componentes na tela",""
-"passed","Wed Mar 30 20:18:52 BRT 2022","Wed Mar 30 20:18:54 BRT 2022","2069","","Testes da tela de login","","","","Tentativa de login com senha errada",""
-"passed","Wed Mar 30 20:18:55 BRT 2022","Wed Mar 30 20:18:57 BRT 2022","1618","","Testes da tela de login","","","","Tentativa de login com e-mail e senhas corretas",""
-"passed","Wed Mar 30 20:18:54 BRT 2022","Wed Mar 30 20:18:55 BRT 2022","1272","","Testes da tela de login","","","","Tentativa de login com e-mail errado",""

@@ -1,5 +1,5 @@
-import elementsLogin from "../elements/elementsLogin";
-import elementsPaginaInicial from "../elements/pagina_inicial/elementsPaginaInicial";
+import elementsLogin from "../support/elements/elementsLogin";
+import elementsPaginaInicial from "../support/elements/pagina_inicial/elementsPaginaInicial";
 
 describe('Testes da tela de login', () => {
     before(() => {

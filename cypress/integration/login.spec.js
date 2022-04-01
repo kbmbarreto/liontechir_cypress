@@ -1,5 +1,5 @@
-import elementsLogin from "../support/elements/elementsLogin";
-import elementsPaginaInicial from "../support/elements/pagina_inicial/elementsPaginaInicial";
+import elementsLogin from "../elements/elementsLogin";
+import elementsPaginaInicial from "../elements/pagina_inicial/elementsPaginaInicial";
 
 describe('Testes da tela de login', () => {
     before(() => {
@@ -15,6 +15,7 @@ describe('Testes da tela de login', () => {
     })
 
     it('Tentativa de login com senha errada', () => {
+
         cy.get(elementsLogin.login.usuario).clear().type('kleber.barreto@msn.com')
         cy.get(elementsLogin.login.senha).clear().type('Xiforimpula2000@#$')
         cy.get(elementsLogin.login.btnEntrar).should('contain', 'Entrar').click()

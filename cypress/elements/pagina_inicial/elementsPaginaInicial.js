@@ -7,13 +7,13 @@ const elementsPaginaInicial = {
             'efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > div.styles__Title-sc-1zcmh4-2.JKldh',
         subtituloImposto: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-' +
             '1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > div.styles__Text-sc-1zcmh4-4.hPnHMf',
-        valorImposto: '//*[@id="__next"]/body/div/div[2]/div/div[1]/div[1]/div[4]/div',
-        btnEditarEventosEspeciais: '//*[@id="__next"]/body/div/div[2]/div/div[1]/div[1]/button[1]',
-        btnFecharBalanco: '//*[@id="__next"]/body/div/div[2]/div/div[1]/div[1]/button[2]',
-        avisoDARF: '//*[@id="__next"]/body/div/div[2]/div/div[1]/div[1]/div[5]/div/div',
+        valorImposto: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > div.styles__Flex-sc-1zcmh4-7.kIdpSt > div',
+        btnEditarEventosEspeciais: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > button.styles__Button-sc-1zcmh4-9.kNnFBe',
+        btnFecharBalanco: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > button.styles__Button-sc-1zcmh4-9.ikOofL',
+        avisoDARF: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > div.styles__Flex-sc-1zcmh4-7.bAgYES > div > div',
     },
     MercadoAVista: {
-        tituloMercadoAVista: '//*[@id="__next"]/body/div/div[2]/div/div[1]/div[2]/div[1]/div',
+        tituloMercadoAVista: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.fqqqDE > div.styles__Flex-sc-1zcmh4-7.jRZJGF > div',
         subtituloMercadoAVista: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > ' +
             'div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.fqqqDE > div.styles__Text-sc-1zcmh4-4.kZmrMG',
         infoTituloMercadoAVista: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7' +
@@ -24,21 +24,21 @@ const elementsPaginaInicial = {
             'div.styles__Flex-sc-1zcmh4-7.fqqqDE > div:nth-child(3) > div.styles__Text-sc-1zcmh4-4.hMVPET',
         txtFaltam: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles_' +
             '_Flex-sc-1zcmh4-7.fqqqDE > div:nth-child(5) > div.styles__Text-sc-1zcmh4-4.jlQIGi',
-        valorFaltam: '//*[@id="__next"]/body/div/div[2]/div/div[1]/div[2]/div[5]/div[2]',
-        valorLucroIsento: '//*[@id="__next"]/body/div/div[2]/div/div[1]/div[2]/div[5]/div[2]',
-        valorLucroIsentoSegEsp: '//*[@id="__next"]/body/div/div[2]/div/div[1]/div[2]/div[6]/div[2]',
+        valorFaltam: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.fqqqDE > div:nth-child(5) > div.styles__Text-sc-1zcmh4-4.hMVPET',
+        valorLucroIsento: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.fqqqDE > div:nth-child(7) > div.styles__Text-sc-1zcmh4-4.hMVPET',
+        valorLucroIsentoSegEsp: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.fqqqDE > div:nth-child(8) > div.styles__Text-sc-1zcmh4-4.hMVPET',
     },
     OperacoesComuns: {
-      tituloOperacoesComuns: '//*[@id="__next"]/body/div/div[2]/div/div[2]/div[1]/div[1]/div/div[2]',
-      valorResultadosOperacoesComuns: '//*[@id="__next"]/body/div/div[2]/div/div[2]/div[1]/div[2]/div[2]',
+      tituloOperacoesComuns: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__CardsContainer-sc-1zcmh4-0.kOFcBN > div:nth-child(1) > div:nth-child(1) > div > div.styles__Title-sc-1zcmh4-2.dIvKOh',
+      valorResultadosOperacoesComuns: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__CardsContainer-sc-1zcmh4-0.kOFcBN > div:nth-child(1) > div:nth-child(2) > div.styles__Text-sc-1zcmh4-4.ivqcEl',
     },
     OperacoesDayTrade: {
-        tituloOperacoesDayTrade: '//*[@id="__next"]/body/div/div[2]/div/div[2]/div[2]/div[1]/div/div[2]',
-        valorOperacoesDayTrade: '//*[@id="__next"]/body/div/div[2]/div/div[2]/div[2]/div[2]/div[2]',
+        tituloOperacoesDayTrade: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__CardsContainer-sc-1zcmh4-0.kOFcBN > div:nth-child(2) > div:nth-child(1) > div > div.styles__Title-sc-1zcmh4-2.dIvKOh',
+        valorOperacoesDayTrade: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__CardsContainer-sc-1zcmh4-0.kOFcBN > div:nth-child(2) > div:nth-child(2) > div.styles__Text-sc-1zcmh4-4.ivqcEl',
     },
     OperacoesFundosImobiliarios:{
-        tituloOperacoesFundosImobiliarios: '//*[@id="__next"]/body/div/div[2]/div/div[2]/div[3]/div[1]/div/div[2]',
-        valorOperacoesFundosImobiliarios: '//*[@id="__next"]/body/div/div[2]/div/div[2]/div[3]/div[2]/div[2]',
+        tituloOperacoesFundosImobiliarios: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__CardsContainer-sc-1zcmh4-0.kOFcBN > div:nth-child(3) > div:nth-child(1) > div > div.styles__Title-sc-1zcmh4-2.dIvKOh',
+        valorOperacoesFundosImobiliarios: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__CardsContainer-sc-1zcmh4-0.kOFcBN > div:nth-child(3) > div:nth-child(2) > div.styles__Text-sc-1zcmh4-4.ivqcEl',
     }
 }
 

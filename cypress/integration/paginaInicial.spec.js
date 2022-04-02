@@ -7,13 +7,14 @@ describe('Testes da página inicial', () => {
         cy.get(elementsLogin.login.usuario).clear().type('kleber.barreto@msn.com')
         cy.get(elementsLogin.login.senha).clear().type('Godisgood#2021')
         cy.get(elementsLogin.login.btnEntrar).click()
+        cy.wait(5000)
     })
 
     it('Verificação dos componentes do menu estático', () => {
-        cy.get(elementsMenu.menuEstatico.home).should("contain", "Home")
-        cy.get(elementsMenu.menuEstatico.darf).should("contain", "Darf")
-        cy.get(elementsMenu.menuEstatico.carteira).should("contain", "Carteira")
-        cy.get(elementsMenu.menuEstatico.relatorios).should("contain", "Relatórios")
+        cy.get(elementsMenu.menuEstatico.home).should("exist", true)
+        cy.get(elementsMenu.menuEstatico.darf).should("exist", true)
+        cy.get(elementsMenu.menuEstatico.carteira).should("exist", true)
+        cy.get(elementsMenu.menuEstatico.relatorios).should("exist", true)
     })
 
     it('Verificação dos componentes do rodapé', () => {
@@ -40,7 +41,7 @@ describe('Testes da página inicial', () => {
         cy.get(elementsPaginaInicial.MercadoAVista.infoTituloMercadoAVista).should("exist", true)
         cy.get(elementsPaginaInicial.MercadoAVista.subtituloMercadoAVista).should("exist", true)
         cy.get(elementsPaginaInicial.MercadoAVista.txtVoceJaVendeu).should("exist", true)
-        cy.get(elementsPaginaInicial.MercadoAVista.valorVoceJaVendeu).should("contain", "R$ 0,00")
+        cy.get(elementsPaginaInicial.MercadoAVista.valorVoceJaVendeu).should("contain", "0")
         cy.get(elementsPaginaInicial.MercadoAVista.txtFaltam).should("exist", true)
         cy.get(elementsPaginaInicial.MercadoAVista.valorFaltam).should("contain", "R$ 0,00")
         cy.get(elementsPaginaInicial.MercadoAVista.valorLucroIsento).should("contain", "R$ 0,00")

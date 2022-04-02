@@ -33,6 +33,6 @@ describe('Testes da tela de login', () => {
         cy.get(elementsLogin.login.usuario).clear().type('kleber.barreto@msn.com')
         cy.get(elementsLogin.login.senha).clear().type('senha123')
         cy.get(elementsLogin.login.btnEntrar).click()
-        cy.get(elementsPaginaInicial.ImpostoAPagar.titulo).should('contain', 'Imposto a Pagar')
+        cy.get(elementsPaginaInicial.ImpostoAPagar.tituloImposto).should('contain', 'Imposto a Pagar')
     })
 })

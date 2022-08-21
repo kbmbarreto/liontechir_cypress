@@ -1,3 +1,7 @@
 {
+  "baseUrl": "https://painel.liontechir.com.br/",
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "video": false,
   "projectId": "rqwqud"
 }

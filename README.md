@@ -12,7 +12,7 @@ Projeto para automação de testes UI, com Cypress. Como estudo de caso, foi uti
 ## Execução
 Para executar os testes, foram disponibilizados os seguintes comandos:
 
-Para rodar os testes: `npm run test`<br>
 Para limpar os relatórios antigos: `npm run allure:clear`<br>
+Para rodar os testes: `npm run test`<br>
 Para gerar os relatórios após a execução dos testes: `npm run allure:generate`<br>
 Para abrir os relatórios gerados: `npm run allure:open`

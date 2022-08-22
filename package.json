@@ -1,6 +1,6 @@
 {
   "name": "liontechir_cypress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automacao de testes UI utilizando o Cypress",
   "main": "index.js",
   "scripts": {

@@ -1,16 +1,13 @@
 
 const elementsPaginaInicial = {
     ImpostoAPagar: {
-        calendarioMes: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > ' +
-            'div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > div.styles__Flex-sc-1zcmh4-7.emUvTV > div > div',
-        tituloImposto: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.' +
-            'efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > div.styles__Title-sc-1zcmh4-2.JKldh',
-        subtituloImposto: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-' +
-            '1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > div.styles__Text-sc-1zcmh4-4.hPnHMf',
-        valorImposto: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > div.styles__Flex-sc-1zcmh4-7.kIdpSt > div',
-        btnEditarEventosEspeciais: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > button.styles__Button-sc-1zcmh4-9.kNnFBe',
-        btnFecharBalanco: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > button.styles__Button-sc-1zcmh4-9.ikOofL',
-        avisoDARF: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.cZfuxa > div.styles__Flex-sc-1zcmh4-7.bAgYES > div > div',
+        calendarioMes: 'div.bvptno',
+        tituloImposto: 'div div.gXioZF',
+        subtituloImposto: 'div div.iyibGU',
+        valorImposto: 'div.sc-lbhJGD.eseTDa',
+        btnEditarEventosEspeciais: 'div a.sc-gGCDDS',
+        btnFecharBalanco: 'div button.blpUBg',
+        avisoDARF: 'div div.fTqzDa',
     },
     MercadoAVista: {
         tituloMercadoAVista: 'body > div > div.styles__Main-sc-1ab02in-1.fOHRB > div > div.styles__Flex-sc-1zcmh4-7.efwfct > div.styles__Flex-sc-1zcmh4-7.fqqqDE > div.styles__Flex-sc-1zcmh4-7.jRZJGF > div',

@@ -9,9 +9,9 @@ const elementsLogin = {
     },
 
     ajuda: {
+        cxPossoAjudar: 'div#hubspot-messages-iframe-container',
         avatarChatLiontech: 'div button.undefined',
-        cxPossoAjudar: 'div div.Application__WidgetAppContainer-sc-1f2l0a1-0.dvBAhE.widget-app-container',
-        messageChat: 'div[aria-label="Mensagem do agente: Olá, seja bem-vindo à LionTech, como podemos te ajudar hoje?"]',
+        messageChat: 'button[aria-label="Abrir chat ao vivo"]',
         writeMessage: 'div[aria-label="Escreva uma mensagem"]',
         sendMessage: 'button[aria-label="Fechar chat ao vivo"]',
     }

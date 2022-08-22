@@ -5,9 +5,6 @@ describe('Testes da página inicial', () => {
     before(() => {
       login.go()
       login.verifyScreen()
-    })
-
-    it('Realizar login na LionTech', () => {
       login.loginSucess()
     })
 
@@ -15,18 +12,8 @@ describe('Testes da página inicial', () => {
       home.menuRefs()
     })
 
-    it('Verificação dos componentes do rodapé', () => {
-      home.menuFooter()
-    })
-
-    it.skip('Verificação dos componentes da seção Imposto a Pagar', () => {
-      cy.get(elementsPaginaInicial.ImpostoAPagar.calendarioMes).should("exist", true)
-      cy.get(elementsPaginaInicial.ImpostoAPagar.tituloImposto).should("contain", "Imposto a Pagar")
-      cy.get(elementsPaginaInicial.ImpostoAPagar.subtituloImposto).should("exist", true)
-      cy.get(elementsPaginaInicial.ImpostoAPagar.valorImposto).should("contain", "R$ 0,00")
-      cy.get(elementsPaginaInicial.ImpostoAPagar.btnEditarEventosEspeciais).should("exist", true)
-      cy.get(elementsPaginaInicial.ImpostoAPagar.btnFecharBalanco).should("exist", true)
-      cy.get(elementsPaginaInicial.ImpostoAPagar.avisoDARF).should("exist", true)
+    it('Verificação dos componentes da seção Imposto a Pagar', () => {
+      home.seçãoImposto()
     })
 
     it.skip('Verificação dos componentes da seção Mercado a Vista', () => {
@@ -54,5 +41,10 @@ describe('Testes da página inicial', () => {
     it.skip('Verificação dos componentes da seção Operações Fundos Imobiliários', () => {
       cy.get(elementsPaginaInicial.OperacoesFundosImobiliarios.tituloOperacoesFundosImobiliarios).should("exist", true)
       cy.get(elementsPaginaInicial.OperacoesFundosImobiliarios.valorOperacoesFundosImobiliarios).should("contain", "R$ 0,00")
+    })
+
+    it.skip('Verificação dos componentes do rodapé', () => {
+      home.menuFooter()
+      home.chat()
     })
 })

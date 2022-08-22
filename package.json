@@ -1,19 +1,18 @@
 {
   "name": "liontechir_cypress",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Automacao de testes UI utilizando o Cypress",
   "main": "index.js",
   "scripts": {
+    "allure:clear": "rm -r allure-results/ allure-report || true",
     "cy:run": "cypress run --config video=false --env allure=true",
     "allure:generate": "allure generate allure-results",
     "allure:open": "allure open allure-report",
-    "allure:clear": "rm -r allure-results/ allure-report || true",
-    "testallure": "npx npm-run-all allure:clear cy:run allure:generate",
-    "test": "npx cypress open"
+    "test": "cypress open"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kbmbarreto/liontechir_cypress.git"
+    "url": "https://github.com/kbmbarreto/liontechir_cypress.git"
   },
   "author": "Kleber Barreto de Macedo",
   "license": "MIT",
@@ -22,12 +21,12 @@
   },
   "homepage": "https://github.com/kbmbarreto/liontechir_cypress#readme",
   "devDependencies": {
-    "@shelex/cypress-allure-plugin": "^2.26.5",
-    "cypress": "^9.5.3",
+    "@shelex/cypress-allure-plugin": "^2.28.5",
+    "cypress": "^9.7.0",
     "jsdom": "19.0.0",
     "jsdom-global": "3.0.2"
   },
   "dependencies": {
-    "run-all": "^1.0.1"
+    "run-all": "1.0.1"
   }
 }

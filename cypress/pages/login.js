@@ -3,7 +3,7 @@ import elementsLogin from "../elements/login/elementsLogin";
 class LoginPage {
 
   go() {
-    cy.visit('/')
+    
   }
 
   verifyScreen() {

@@ -4,11 +4,13 @@
   "description": "Automacao de testes UI utilizando o Cypress",
   "main": "index.js",
   "scripts": {
+    "cy:open": "cypress open",
+    "cy:open:mobile": "cypress open --config viewportWidth=410 viewportHeight=860",
+    "cy:test": "cypress run",
+    "cy:test:mobile": "cypress run --config viewportWidth=410 viewportHeight=860",
     "allure:clear": "rm -r allure-results/ allure-report || true",
-    "cy:run": "cypress run --config video=false --env allure=true",
     "allure:generate": "allure generate allure-results",
-    "allure:open": "allure open allure-report",
-    "test": "cypress open"
+    "allure:open": "allure open allure-report"
   },
   "repository": {
     "type": "git",
@@ -22,7 +24,7 @@
   "homepage": "https://github.com/kbmbarreto/liontechir_cypress#readme",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.28.5",
-    "cypress": "^9.7.0",
+    "cypress": "^10.10.0",
     "jsdom": "19.0.0",
     "jsdom-global": "3.0.2"
   },

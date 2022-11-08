@@ -1,8 +1,8 @@
-import login from "../pages/login";
+/// <reference types="Cypress" />
 
 describe('Testes da tela de login', () => {
     beforeEach(() => {
-      login.go()
+      cy.visit('/')
     })
 
     it('Verificação dos componentes na tela', () => {

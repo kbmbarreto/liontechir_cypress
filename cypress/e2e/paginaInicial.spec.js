@@ -1,5 +1,4 @@
-import login from "../pages/login";
-import home from "../pages/home";
+/// <reference types="Cypress" />
 
 describe('Testes da página inicial', () => {
     before(() => {

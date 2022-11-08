@@ -1,8 +1,3 @@
-import elementsLogin from "../elements/login/elementsLogin";
-import elementsPaginaInicial from "../elements/pagina_inicial/elementsPaginaInicial";
-import elementsMenu from "../elements/pagina_inicial/elementsMenu";
-//import elementsRodape from "../elements/pagina_inicial/elementsRodape";
-
 class HomePage {
   menuRefs() {
     cy.get('.sc-jObWnj').should("exist", true);

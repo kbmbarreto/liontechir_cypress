@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:open:mobile": "cypress open --config viewportWidth=410 viewportHeight=860",
+    "cy:open:mobile": "cypress open --config viewportWidth=500 viewportHeight=860",
     "cy:test": "cypress run",
-    "cy:test:mobile": "cypress run --config viewportWidth=410 viewportHeight=860",
+    "cy:test:mobile": "cypress run --config viewportWidth=500 viewportHeight=860",
     "allure:clear": "rm -r allure-results/ allure-report || true",
     "allure:generate": "allure generate allure-results",
     "allure:open": "allure open allure-report"

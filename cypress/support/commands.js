@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('typeLogin', (user) => {
+    cy.clock()
+    cy.get("div label.bp3-label").should("be.visible");
+    cy.get('input[type="email"]')
+      .clear()
+      .type(user.email)
+      .should("be.visible");
+    cy.get('input[type="password"]')
+      .clear()
+      .type(user.password)
+      .should("be.visible");
+    cy.get('@submitButton').click();
+  });

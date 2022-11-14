@@ -6,7 +6,7 @@ jobs:
 
   ui-chrome-tests:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node14.17.0-chrome88-ff89
+    container: cypress/browsers:node16.18.0-chrome88-ff89
     strategy:
       fail-fast: false
     steps:
@@ -18,11 +18,12 @@ jobs:
         with:
           install-command: yarn install
           wait-on: ${{ secrets.BASE_URL }}
-          wait-on-timeout: 120
+          wait-on-timeout: 30
           browser: chrome
           record: true
           group: 'UI - Chrome'
           spec: cypress/e2e/*
+          config-file: cypress.config.js
         env:
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

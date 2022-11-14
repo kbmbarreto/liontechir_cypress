@@ -4,7 +4,7 @@
   "description": "Automacao de testes UI utilizando o Cypress",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open --config-file=cypress.config.js",
+    "cy:open": "cypress open",
     "cy:open:mobile": "cypress open --config viewportWidth=500 viewportHeight=860",
     "cy:test": "cypress run",
     "cy:test:mobile": "cypress run --config viewportWidth=500 viewportHeight=860",

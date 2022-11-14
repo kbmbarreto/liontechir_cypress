@@ -49,7 +49,7 @@ describe('LIONTECH - Guia Home', () => {
       cy.get('div.WSCVp').siblings().eq(4).should('be.visible')
     })
 
-    it.only('Verifica o element hover do nome do usuário', () => {
+    it('Verifica o element hover do nome do usuário', () => {
       cy.get('div.edLuxe')
         .should('be.visible')
         .invoke('show')

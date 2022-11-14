@@ -1,6 +1,7 @@
 /// <reference types="Cypress" />
 
 describe("Testes da tela de login", () => {
+  const ONE_SECONDS_IN_MS = 1000;
   beforeEach(() => {
     cy.visit('/')
     cy.get('button[type="submit"]').as('submitButton')
@@ -19,18 +20,9 @@ describe("Testes da tela de login", () => {
     cy.get('button[type="submit"]').should("contain.text", "Entrar");
   });
 
-  it("Tentativa de login com e-mail e senha correta", () => {
+  it.only("Tentativa de login com e-mail e senha correta", () => {
     cy.clock()
-    cy.get("div label.bp3-label").should("be.visible");
-    cy.get('input[type="email"]')
-      .clear()
-      .type("vini_santos7@live.com")
-      .should("be.visible");
-    cy.get('input[type="password"]')
-      .clear()
-      .type("V!nibj@E2@")
-      .should("be.visible");
-    cy.get('@submitButton').click();
+    cy.typeLogin({ email: 'vini_santos7@live.com', password: 'V!nibj@E2@' })
   });
 
   it("Tentativa de login com senha incorreta", () => {
@@ -39,7 +31,7 @@ describe("Testes da tela de login", () => {
     cy.get('input[type="email"]').clear().type("vini_santos7@live.com").should("be.visible");
     cy.get('input[type="password"]').clear().type("V!ni").should("be.visible");
     cy.get('@submitButton').click();
-    cy.tick(1000)
+    cy.tick(ONE_SECONDS_IN_MS)
     cy.get('div span[icon="error"]').should("be.visible");
   });
 
@@ -49,7 +41,7 @@ describe("Testes da tela de login", () => {
     cy.get('input[type="email"]').clear().type("vini_santos7@live.br").should("be.visible");
     cy.get('input[type="password"]').clear().type("V!nibj@E2@").should("be.visible");
     cy.get('@submitButton').click();
-    cy.tick(1000)
+    cy.tick(ONE_SECONDS_IN_MS)
     cy.get('div span[icon="error"]').should("be.visible");
   });
 

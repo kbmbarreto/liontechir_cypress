@@ -1,18 +1,21 @@
 const { defineConfig } = require('cypress')
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
 module.exports = defineConfig({
-  viewportWidth: 1440,
-  viewportHeight: 900,
-  video: false,
-  projectId: 'rqwqud',
   e2e: {
-    baseUrl: 'https://painel.liontechir.com.br/',
+    baseUrl: 'https://painel.liontechir.com.br',
     specPattern: 'cypress/e2e/*',
-    // We've imported your old cypress plugins here.
-    // You may want to clean this up later by importing these.
+    experimentalRunAllSpecs: true,
+    projectId: 'rqwqud', 
+    viewportWidth: 1024,
+    viewportHeight: 768,
+    mobile: {
+      viewportWidth: 768, 
+      viewportHeight: 812,
+    },
     setupNodeEvents(on, config) {
-      return require('./cypress/plugins/index.js')
-      (on, config)
-    }
+      allureWriter(on, config);
+      return config;
+    },
   },
-})
+});

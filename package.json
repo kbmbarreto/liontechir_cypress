@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "cy:open": "cypress open",
-    "cy:open:mobile": "cypress open --config viewportWidth=500 viewportHeight=860",
+    "cy:open:mobile": "cypress open --config viewportWidth=768 viewportHeight=812",
     "cy:test": "cypress run",
-    "cy:test:mobile": "cypress run --config viewportWidth=500 viewportHeight=860",
+    "cy:test:mobile": "cypress run --config viewportWidth=768 viewportHeight=812",
+    "cy:chrome": "cy:test --browser chrome",
+    "cy:firefox": "cy:test --browser firefox",
+    "cy:edge": "cy:test --browser edge",
     "allure:clear": "rm -r allure-results/ allure-report || true",
     "allure:generate": "allure generate allure-results",
     "allure:open": "allure open allure-report"
@@ -17,6 +20,9 @@
     "url": "https://github.com/kbmbarreto/liontechir_cypress.git"
   },
   "author": "Kleber Barreto de Macedo",
+  "contributor": [
+    "Vini Santos"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/kbmbarreto/liontechir_cypress/issues"
@@ -24,7 +30,8 @@
   "homepage": "https://github.com/kbmbarreto/liontechir_cypress#readme",
   "devDependencies": {
     "@shelex/cypress-allure-plugin": "^2.28.5",
-    "cypress": "^10.10.0",
+    "cypress": "^12.5.1",
+    "http-server": "^14.1.1",
     "jsdom": "19.0.0",
     "jsdom-global": "3.0.2"
   },

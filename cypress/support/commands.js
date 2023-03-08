@@ -1,29 +1,3 @@
-// ***********************************************
-// This example commands.js shows you how to
-// create various custom commands and overwrite
-// existing commands.
-//
-// For more comprehensive examples of custom
-// commands please read more here:
-// https://on.cypress.io/custom-commands
-// ***********************************************
-//
-//
-// -- This is a parent command --
-// Cypress.Commands.add('login', (email, password) => { ... })
-//
-//
-// -- This is a child command --
-// Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
-//
-//
-// -- This is a dual command --
-// Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
-//
-//
-// -- This will overwrite an existing command --
-// Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
 const ONE_SECONDS_IN_MS = 1000;
 
 Cypress.Commands.add('login', (correctEmail, correctPassword) => {
@@ -33,11 +7,11 @@ Cypress.Commands.add('login', (correctEmail, correctPassword) => {
     .should("be.visible");
   cy.get('input[type="email"]')
     .clear()
-    .type(correctEmail, { log: false })
+    .type(correctEmail, { log: false } )
     .should("be.visible");
   cy.get('input[type="password"]')
     .clear()
-    .type(correctPassword, { log: false })
+    .type(correctPassword, { log: false } )
     .should("be.visible");
   cy.get('@submitButton')
     .click();
@@ -95,4 +69,35 @@ Cypress.Commands.add('darf', () => {
     .should('eq', Cypress.config().baseUrl + '/darf')
   cy.get('div.esOcXU')
     .should('be.visible')
+})
+
+Cypress.Commands.add('carteiraB3', () => {
+  cy.get('span div.label')
+    .contains('Carteira B3')
+    .should('be.visible')
+
+  cy.get('span svg desc')
+    .invoke('show')
+
+  cy.visit(Cypress.config().baseUrl + '/b3/position')
+
+  cy.get('.titleHeader')
+    .should('be.visible')
+    .contains('Posição dos Ativos B3')
+})
+
+Cypress.Commands.add('balancosB3', () => {
+  cy.get('span div.label')
+      .contains('Carteira B3')
+      .should('be.visible')
+  
+    cy.get('span svg desc')
+      .invoke('show')
+  
+    cy.visit(Cypress.config().baseUrl + '/b3/balance')
+  
+    cy.get('.titleHeader')
+      .should('be.visible')
+      .contains('Balanços B3')
+      .should('be.visible')
 })

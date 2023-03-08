@@ -39,9 +39,9 @@ git clone https://github.com/kbmbarreto/liontechir_cypress.git
 ## Execução
 Para executar os testes, foram disponibilizados os seguintes comandos:
 
-Para limpar os relatórios antigos: `npm run allure:clear`<br>
 Para rodar os testes em modo headless `npm run cy:run`<br>
 Para rodar os testes em GUI: `npm run test`<br>
+Para limpar os relatórios antigos: `npm run allure:clear`<br>
 Para gerar os relatórios após a execução dos testes: `npm run allure:generate`<br>
 Para abrir os relatórios gerados: `npm run allure:open`
 

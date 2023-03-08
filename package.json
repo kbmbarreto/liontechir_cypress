@@ -36,6 +36,8 @@
     "jsdom-global": "3.0.2"
   },
   "dependencies": {
+    "cypress-plugin-steps": "^1.1.0",
+    "cypress-plugin-xhr-toggle": "^1.0.0",
     "run-all": "1.0.1"
   }
 }

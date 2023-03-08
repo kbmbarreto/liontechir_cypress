@@ -13,6 +13,9 @@ module.exports = defineConfig({
       viewportWidth: 768, 
       viewportHeight: 812,
     },
+    env: {
+      hideXhr: true
+    },
     setupNodeEvents(on, config) {
       allureWriter(on, config);
       return config;

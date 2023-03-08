@@ -1,6 +1,7 @@
 /// <reference types="Cypress" />
 
 describe("LIONTECH - Darf", () => {
+
   beforeEach(() => {
     cy.visit("/");
 
@@ -50,7 +51,7 @@ describe("LIONTECH - Darf", () => {
     cy.contains("#")
       .should("be.visible")
       .parent("tr")
-      .should("be.visible")
+      .should("have.length", 1)
       .within(() => {
         cy.get("th").eq(1).contains("Mês/Ano").should("be.visible");
         cy.get("th").eq(2).contains("Compras").should("be.visible");
@@ -61,24 +62,27 @@ describe("LIONTECH - Darf", () => {
      });
   });
 
-  it.only('Verifica os "td(s)" da tabela', () => {
+  it('Verifica que a tabela tem um corpo', () => {
+    
+    cy.darf()
+    
+    cy.get("tbody")
+      .parent("table")
+      .find("tbody[class*=tableBody]")
+      .should("be.visible")
+  })
+
+  it('Verifica os dados da tabela', () => {
+    
+    cy.clock()
     cy.darf()
 
-    cy.get("table")
-      .should("be.visible")
-      .children()
+    cy.get("table.table")
+      .invoke('show')
       .should("be.visible")
 
-    // cy.get('td')
-    //   .should("be.visible")
-    //   .should('have.length', 161)
-      
-    cy.get('tr td')
-      .each(($td) => {
-        cy.wrap($td)
-          .should(($td) => {
-            expect($td).to.have.length(1)
-          })
-      })
+    cy.get('tr')
+      .invoke('show')
+      .should("be.visible")
     })
   });

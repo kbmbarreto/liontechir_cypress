@@ -3,22 +3,23 @@ name: Cypress Regression Tests
 on: [push]
 
 jobs:
-
   ui-chrome-tests:
     runs-on: ubuntu-latest
-    container: cypress/browsers:node14.17.0-chrome88-ff89
+    container: 
+      image: cypress/browsers:node-18.14.1-chrome-110.0.5481.96-1-ff-109.0-edge-110.0.1587.41-1
+      options: --user 1001
     strategy:
       fail-fast: false
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3.3.0
       
       - name: 'UI Tests - Chrome'
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v5
         with:
           install-command: yarn install
           wait-on: ${{ secrets.BASE_URL }}
-          wait-on-timeout: 30
+          wait-on-timeout: 15
           browser: chrome
           record: true
           group: 'UI - Chrome'

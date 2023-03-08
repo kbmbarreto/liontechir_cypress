@@ -87,8 +87,7 @@ describe("LionTech - Inscreva-se", () => {
 
     it("Verifica que a página do instagram abre em outra aba sem a necessidade de um clique", () => {
       cy.get('a[href="https://www.instagram.com/liontechir/"]')
-        .should("have.attr", "target", "_blank"
-      );
+        .should("have.attr", "target", "_blank");
     });
 
     it("Verifica que a página do linkedin abre em outra aba sem a necessidade de um clique", () => {

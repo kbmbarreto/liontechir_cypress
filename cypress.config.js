@@ -14,6 +14,10 @@ module.exports = defineConfig({
       viewportHeight: 812,
     },
     env: {
+      correctEmail: "vini_santos7@live.com",
+      incorrectEmail: "vini7@bol.br",
+      correctPassword: "V!nibj@E2@",
+      incorrectPassword: "abc123",
       hideXhr: true
     },
     setupNodeEvents(on, config) {

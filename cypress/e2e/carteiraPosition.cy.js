@@ -1,6 +1,6 @@
 /// <reference types="Cypress" />
 
-describe('LIONTECH - Posição dos Ativos B3', () => {
+describe('LIONTECH - Posição dos Ativos', () => {
   
   beforeEach(() => {
     cy.visit("/");
@@ -12,8 +12,8 @@ describe('LIONTECH - Posição dos Ativos B3', () => {
              Cypress.env("correctPassword"));
   });
   
-  context('Ativos B3', () => {
-    it('Acessa o submenu carteira da carteira B3', () => {
+  context('Ativos', () => {
+    it('Acessa o submenu carteira', () => {
 
       cy.step('Acesso á página de posição de ativos')
       cy.carteiraB3()

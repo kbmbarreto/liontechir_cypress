@@ -23,7 +23,7 @@ describe('LIONTECH - Balanços B3', () => {
       cy.step('Acesso á página de balanços')
       cy.balancosB3()
   
-      cy.step('Confirma o acesso e titulo da seção ')
+      cy.step('Confirma o acesso e titulo da seção')
       cy.get('div.esOcXU')
         .should('be.visible')
   

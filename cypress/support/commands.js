@@ -1,8 +1,6 @@
 const ONE_SECONDS_IN_MS = 1000;
 
 Cypress.Commands.add('login', (correctEmail, correctPassword) => {
-  // cy.session([correctEmail, correctPassword], () => {;
-  // cy.visit('/')
   cy.get("div label.bp3-label")
     .should("be.visible");
   cy.get('input[type="email"]')
@@ -99,5 +97,37 @@ Cypress.Commands.add('balancosB3', () => {
     cy.get('.titleHeader')
       .should('be.visible')
       .contains('Balanços B3')
+      .should('be.visible')
+})
+
+Cypress.Commands.add('transaction', () => {
+  cy.get('span div.label')
+    .contains('Carteira B3')
+    .should('be.visible')
+  
+    cy.get('span svg desc')
+      .invoke('show')
+  
+    cy.visit(Cypress.config().baseUrl + '/b3/transaction')
+
+    cy.get('.titleHeader')
+      .should('be.visible')
+      .contains('Movimentação de Ativos')
+      .should('be.visible')
+})
+
+Cypress.Commands.add('initialBalance', () => {
+    cy.get('span div.label')
+      .contains('Carteira B3')
+      .should('be.visible')
+
+    cy.get('span svg desc')
+      .invoke('show')
+
+    cy.visit(Cypress.config().baseUrl + '/initial-balance')
+
+    cy.get('.titleHeader')
+      .should('be.visible')
+      .contains('Edição do Saldo Inicial do Ano')
       .should('be.visible')
 })

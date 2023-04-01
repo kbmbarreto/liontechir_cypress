@@ -13,7 +13,6 @@ describe("Login", () => {
     cy.visit('/')
     cy.get('button[type="submit"]')
       .as('submitButton')
-    //cy.viewport(1920, 1080)
   });
   
   context('Testes de login', () => {

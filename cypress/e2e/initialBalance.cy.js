@@ -12,7 +12,7 @@ describe('LIONTECH - Edição do Saldo Inicial', () => {
              Cypress.env("correctPassword"));
   });
 
-  it('Acessa o submenu Editar saldo inicial', () => {
+  it.only('Acessa o submenu Editar saldo inicial', () => {
     
     cy.step('Acesso á página de balanços')
     cy.initialBalance()
@@ -67,5 +67,4 @@ describe('LIONTECH - Edição do Saldo Inicial', () => {
 
 
   });
-
 });

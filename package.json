@@ -15,6 +15,7 @@
     "cy:carteiraPosition": "cypress run --spec 'cypress/e2e/carteiraPosition.cy.js' ",
     "cy:darf": "cypress run --spec 'cypress/e2e/darf.cy.js' ",
     "cy:forgotPassword": "cypress run --spec 'cypress/e2e/forgotPassword.cy.js' ",
+    "cy:initialBalance": "cypress run --spec 'cypress/e2e/initialBalance.cy.js' ",
     "cy:home": "cypress run --spec 'cypress/e2e/home.cy.js' ",
     "cy:login": "cypress run --spec 'cypress/e2e/login.cy.js' ",
     "cy:signup": "cypress run --spec 'cypress/e2e/signup.cy.js' ",
